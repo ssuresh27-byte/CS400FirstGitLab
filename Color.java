@@ -1,3 +1,10 @@
+// == CS400 Summer 2024 File Header Information ==
+// Name: Sanjay Suresh
+// Email: ssuresh27@wisc.edu
+// CS Account: ssuresh
+// Lecturer:
+// Notes to Grader:
+
 /*
  *	Color class
  */

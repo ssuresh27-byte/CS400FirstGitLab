@@ -1,0 +1,59 @@
+Script started on 2024-06-29 20:39:50-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="80" LINES="24"]
+[?2004h[ssuresh@snares-08] (1)$ make
+[?2004ljavac Color.java Main.java
+java Main
+Beggining of testing the color class:
+What color do you want to change to? 
+2
+Color change failed! 
+[?2004h[ssuresh@snares-08] (2)$ [7mgit status[27mgit status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   Color.java[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mColor.class[m
+	[31mLabW3GitCommitLog.txt[m
+	[31mMain.class[m
+	[31mMakefile[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h[ssuresh@snares-08] (3)$ g[Kgit add .
+[?2004l[?2004h[ssuresh@snares-08] (4)$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   Color.class[m
+	[32mmodified:   Color.java[m
+	[32mnew file:   LabW3GitCommitLog.txt[m
+	[32mnew file:   Main.class[m
+	[32mnew file:   Makefile[m
+
+[?2004h[ssuresh@snares-08] (5)$ git commit -m "[7mCompleted the TODO part in the changeCol[27m[7mo[27m[7mr method in Color.java, and added the Makefile"[27m[ACompleted the TODO part in the changeColor method in Color.java, and added the Makefile"
+[?2004l[main d4a7aa7] Completed the TODO part in the changeColor method in Color.java, and added the Makefile
+ 5 files changed, 20 insertions(+), 2 deletions(-)
+ create mode 100644 Color.class
+ create mode 100644 LabW3GitCommitLog.txt
+ create mode 100644 Main.class
+ create mode 100644 Makefile
+[?2004h[ssuresh@snares-08] (6)$ nano Color.jac[Kva
+[?2004l[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;32H(B[0;7m[ Read 52 lines ](B[m[H(B[0;7m  GNU nano 6.2                       Color.java                                 [1;79H(B[m[23d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line[2d[34m/*[3d *      Color class[4d */[5d[36mpublic[39m(B[m [36mclass[39m(B[m Color{[6;9H[36mprivate[39m(B[m String color;[8;9H[34m//Constructor[9;9H[36mpublic[39m(B[m Color(String iniColor){[10;17H[31mif[39m(B[m(isColorValid(iniColor)){[12;25H[32mthis[39m(B[m.color = iniColor;[13;17H}[15d[31melse[39m(B[m{[16;25HSystem.out.println([31m"Failed to initalize the color"[39m(B[m);[17;17H}[18;9H}[20d[34m//Getter[21;9H[36mpublic[39m(B[m String getColor(){[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[A[?25l[?12l[?25h[C[?25l[?12l[?25h[C[?25l[1;49H(B[0;7m*[79G(B[m[?12l[?25h[2;3H[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[3G[34m      N[39m(B[m[?25l[?12l[?25h[34ma[39m(B[m[?25l[?12l[?25h[34mm[39m(B[m[?25l[?12l[?25h[34me[39m(B[m[?25l[?12l[?25h[34m:[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[34m S[39m(B[m[?25l[?12l[?25h[34ma[39m(B[m[?25l[?12l[?25h[34mn[39m(B[m[?25l[22d[K[?12l[?25h[2;18H[34mj[39m(B[m[?25l[?12l[?25h[34ma[39m(B[m[?25l[?12l[?25h[34my[39m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[34m S[39m(B[m[?25l[?12l[?25h[34mu[39m(B[m[?25l[?12l[?25h[34mr[39m(B[m[?25l[?12l[?25h[34me[39m(B[m[?25l[?12l[?25h[34ms[39m(B[m[?25l[?12l[?25h[34mh[39m(B[m[?25l7[3;21r8[3dM[1;24r[3;1H[?12l[?25h[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[3;22r[22;1H
+[1;24r[21;9H[36mpublic[39m(B[m String getColor(){[2;28H[?12l[?25h[?25l7[3;21r8[3dM[1;24r[3;1H[?12l[?25h[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h[42m [49m(B[m[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h [?25l[22d(B[0;7mSave modified buffer?                                                           [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;23H[?12l[?25h[?25l[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[ssuresh@snares-08] (7)$ c[Kgit push origin main
+[?2004lEnumerating objects: 9, done.
+Counting objects:  11% (1/9)Counting objects:  22% (2/9)Counting objects:  33% (3/9)Counting objects:  44% (4/9)Counting objects:  55% (5/9)Counting objects:  66% (6/9)Counting objects:  77% (7/9)Counting objects:  88% (8/9)Counting objects: 100% (9/9)Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 2.05 KiB | 2.05 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/ssuresh27-byte/CS400FirstGitLab
+   6468e87..d4a7aa7  main -> main
+[?2004h[ssuresh@snares-08] (8)$ nano Color [K.java
+[?2004l[?2004h[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;34H(B[0;7m[ Reading... ](B[m[22;32H(B[0;7m[ Read 52 lines ](B[m[H(B[0;7m  GNU nano 6.2                       Color.java                                 [1;79H(B[m[23d(B[0;7m^G(B[m Help[14G(B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut[53G(B[0;7m^T(B[m Execute   (B[0;7m^C(B[m Location[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Paste     (B[0;7m^J(B[m Justify   (B[0;7m^/(B[m Go To Line[2d[34m/*[3d *      Color class[4d */[5d[36mpublic[39m(B[m [36mclass[39m(B[m Color{[6;9H[36mprivate[39m(B[m String color;[8;9H[34m//Constructor[9;9H[36mpublic[39m(B[m Color(String iniColor){[10;17H[31mif[39m(B[m(isColorValid(iniColor)){[12;25H[32mthis[39m(B[m.color = iniColor;[13;17H}[15d[31melse[39m(B[m{[16;25HSystem.out.println([31m"Failed to initalize the color"[39m(B[m);[17;17H}[18;9H}[20d[34m//Getter[21;9H[36mpublic[39m(B[m String getColor(){[2d[?12l[?25h[?25l[1;49H(B[0;7m*[79G(B[m7[2;21r8[2dM[1;24r[3;1H[?12l[?25h[?25l[2;21r[2;1HM[1;24r[4;1H[?12l[?25h[?25l[?12l[?25h[A[?25l[?12l[?25h[A[?25l7[2;22r8[5T[1;24r[2;1H[34m// == CS400 Summer 2024 File Header Information ==[3d// Name: Sanjay Suresh[4d// Email: ssuresh27@wisc.edu[5d// CS Account: ssuresh[6d// Lecturer:[7d// Notes to Grader:[22d[39m(B[m[K[7;20H[?12l[?25h[?25l[?12l[?25h[6;13H[?25l[22;34H(B[0;7m[ Writing... ](B[m[1;49H(B[0;7m [79G(B[m[22;32H(B[0;7m[ Wrote 59 lines ](B[m[?12l[?25h[6;13H[?25l[22d[J[24d[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[ssuresh@snares-08] (
