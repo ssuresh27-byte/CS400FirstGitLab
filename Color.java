@@ -7,8 +7,10 @@ public class Color{
 	//Constructor
 	public Color(String iniColor){
 		if(isColorValid(iniColor)){
+
 			this.color = iniColor;
 		}
+
 		else{
 			System.out.println("Failed to initalize the color");
 		}
@@ -24,9 +26,16 @@ public class Color{
 	 * 	and different from the exisitng color before making the change
 	 */
 	public boolean  changeColor(String newColor){
-		this.color = newColor;
+		if(isColorValid(newColor)){
+			if(this.color!=newColor){
+				this.color = newColor;
+				return true;
+			}
+			return false;
+		}
 
-		return true;
+
+		return false;
 	}
 
 	public boolean isColorValid(String inputColor){
